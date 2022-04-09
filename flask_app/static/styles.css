@@ -1,0 +1,21 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-dojo{
+  margin-right: 40px;
+}
+
+.new-dojo button[type="submit"] {
+  margin-top: 10px;
+  border: none;
+  flex: 1;
+}
+
+
+
+.all-dojos{
+  flex: 2;
+}
