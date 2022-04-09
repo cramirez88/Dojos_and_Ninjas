@@ -4,6 +4,4 @@ from flask_app.models.ninja import Ninja
 
 #Routes
 
-@app.route('/')
-def index():
-    return render_template('index.html')
+
