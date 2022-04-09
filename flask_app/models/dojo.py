@@ -17,3 +17,11 @@ class Dojo:
         for dojo in results:
             dojos.append(cls(dojo))
         return dojos
+
+    # classmethod for adding dojos
+
+    @classmethod
+    def create_dojo(cls, data):
+        query = "INSERT INTO dojos (name) VALUES(%(name)s);"
+        results = connectToMySQL('dojos_and_ninjas').query_db(query, data)
+        return results
