@@ -27,11 +27,13 @@
       <table class="table">
       <!-- Generate rows per entry -->
         {% for d in all_dojos %}
-          <tr>
-            <td class="table-warning">{{d.name}}</td>
-          </tr>
+          <p>
+            <a href="/dojo/{{d.id}}">{{d.name}}</a>
+          </p>
         {% endfor %}
       </table>
+
+      <a href="/add/ninja">Add Ninja</a>
     </div>
   </div>
 </body>
